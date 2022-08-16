@@ -34,7 +34,7 @@ public class ClientFormController extends Thread {
         lblName.setText(LoginFormController.username);
 
         try {
-            socket = new Socket("localhost", 5555);
+            socket = new Socket("localhost", 5556);
             System.out.println("Socket is connected with server!");
             reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             writer = new PrintWriter(socket.getOutputStream(), true);
